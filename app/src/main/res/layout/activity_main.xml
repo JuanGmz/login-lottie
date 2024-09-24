@@ -20,7 +20,7 @@
         app:layout_constraintBottom_toTopOf="@id/guideline3"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/animacion2" />
+        app:lottie_rawRes="@raw/animacion1" />
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -51,6 +51,7 @@
         app:layout_constraintVertical_chainStyle="packed"
         android:ems="10"
         android:inputType="text"
+        android:layout_marginTop="30dp"
         android:hint="Contraseña"
         app:layout_constraintTop_toBottomOf="@+id/editTextText"
         app:layout_constraintBottom_toTopOf="@id/button"
@@ -64,6 +65,7 @@
         android:ems="10"
         app:layout_constraintVertical_chainStyle="packed"
         android:inputType="text"
+        android:layout_marginTop="30dp"
         android:hint="Correo"
         app:layout_constraintTop_toBottomOf="@+id/guideline2"
         app:layout_constraintStart_toEndOf="@id/guideline1"
@@ -75,6 +77,7 @@
         android:layout_width="wrap_content"
         app:layout_constraintVertical_chainStyle="packed"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:text="Iniciar Sesión"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,10 +87,10 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/wave"
-        tools:layout_editor_absoluteY="542dp"/>
+        tools:layout_editor_absoluteY="542dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
