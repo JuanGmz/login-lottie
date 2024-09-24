@@ -10,16 +10,17 @@
 
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animationView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:lottie_rawRes="@raw/animacion1"
-        app:layout_constraintTop_toBottomOf="@id/guideline2"
-        app:layout_constraintBottom_toTopOf="@id/guideline3"
-        app:layout_constraintEnd_toStartOf="@id/guideline1"
+        android:id="@+id/animacion"
+        android:layout_width="93dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="36dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintBottom_toTopOf="@id/guideline3"
+        app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_autoplay="true"/>
+        app:lottie_rawRes="@raw/animacion2" />
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -47,60 +48,46 @@
         android:id="@+id/editTextText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintVertical_chainStyle="packed"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="376dp" />
+        android:hint="Contraseña"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintStart_toEndOf="@id/guideline1"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:ems="10"
+        app:layout_constraintVertical_chainStyle="packed"
         android:inputType="text"
-        android:text="Name"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:layout_editor_absoluteX="147dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="Contraseña"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
+        android:hint="Correo"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@id/guideline1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
-        app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText"
-        app:layout_constraintVertical_bias="0.666" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="116dp"
-        android:text="Correo Electrónico"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.146"
-        app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintBottom_toTopOf="@id/editTextText2"/>
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
+        app:layout_constraintVertical_chainStyle="packed"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="104dp"
         android:text="Iniciar Sesión"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.155"
-        app:layout_constraintStart_toStartOf="@+id/guideline1" />
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/editTextText2"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/wave"
+        tools:layout_editor_absoluteY="542dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
