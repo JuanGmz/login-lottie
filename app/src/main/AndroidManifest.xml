@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Loginlottie"
         tools:targetApi="31">
+
+        <!-- Splash activity configurada como lanzadora -->
         <activity
             android:name=".splash"
             android:exported="true">
@@ -20,9 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- MainActivity, la actividad que será abierta después del splash -->
         <activity
             android:name=".MainActivity"
-            android:exported="false">
+            android:exported="true">  <!-- Cambiado a exported="true" -->
         </activity>
     </application>
 
